@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-
+import { SampleModule } from 'state-store-library';
 
 @NgModule({
   declarations: [
