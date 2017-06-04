@@ -1,1 +1,0 @@
-{"version":3,"sources":["../lib/state-store-service.ts"],"names":[],"mappings":"AAAA;;GAEG;AAEH,OAAO,EAAC,mBAAmB,EAAC,iBAAiB,EAAC,gBAAgB,EAAC,MAAM,SAAS,CAAC","file":"state-store-service.js","sourceRoot":"","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\n\nexport {StateStoreComponent,StateStoreService,StateStoreModule} from './index';\n"]}
