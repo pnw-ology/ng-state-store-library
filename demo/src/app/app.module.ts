@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { SampleModule } from 'state-store-library';
+import { StateStoreModule } from 'state-store-library';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { SampleModule } from 'state-store-library';
     BrowserModule,
     FormsModule,
     HttpModule,
-    SampleModule.forRoot()
+    StateStoreModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

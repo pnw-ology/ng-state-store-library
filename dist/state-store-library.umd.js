@@ -4,125 +4,70 @@
 	(factory((global['state-store-library'] = global['state-store-library'] || {}),global._angular_core,global._angular_common));
 }(this, (function (exports,_angular_core,_angular_common) { 'use strict';
 
-var SampleComponent = (function () {
-    function SampleComponent() {
+var StateStoreComponent = (function () {
+    function StateStoreComponent() {
     }
-    return SampleComponent;
+    return StateStoreComponent;
 }());
-SampleComponent.decorators = [
+StateStoreComponent.decorators = [
     { type: _angular_core.Component, args: [{
-                selector: 'sample-component',
-                template: "<h1>Sample component</h1>"
+                selector: 'state-store-component',
+                template: "<h1>State Store component</h1>"
             },] },
 ];
 /**
  * @nocollapse
  */
-SampleComponent.ctorParameters = function () { return []; };
+StateStoreComponent.ctorParameters = function () { return []; };
 
-var SampleDirective = (function () {
-    /**
-     * @param {?} el
-     */
-    function SampleDirective(el) {
-        this.el = el;
+var StateStoreService = (function () {
+    function StateStoreService() {
     }
-    return SampleDirective;
+    return StateStoreService;
 }());
-SampleDirective.decorators = [
-    { type: _angular_core.Directive, args: [{
-                selector: '[sampleDirective]'
-            },] },
-];
-/**
- * @nocollapse
- */
-SampleDirective.ctorParameters = function () { return [
-    { type: _angular_core.ElementRef, },
-]; };
-
-/**
- * Transforms any input value
- */
-var SamplePipe = (function () {
-    function SamplePipe() {
-    }
-    /**
-     * @param {?} value
-     * @param {?=} args
-     * @return {?}
-     */
-    SamplePipe.prototype.transform = function (value, args) {
-        if (args === void 0) { args = null; }
-        return value;
-    };
-    return SamplePipe;
-}());
-SamplePipe.decorators = [
-    { type: _angular_core.Pipe, args: [{
-                name: 'samplePipe'
-            },] },
+StateStoreService.decorators = [
     { type: _angular_core.Injectable },
 ];
 /**
  * @nocollapse
  */
-SamplePipe.ctorParameters = function () { return []; };
+StateStoreService.ctorParameters = function () { return []; };
 
-var SampleService = (function () {
-    function SampleService() {
-    }
-    return SampleService;
-}());
-SampleService.decorators = [
-    { type: _angular_core.Injectable },
-];
-/**
- * @nocollapse
- */
-SampleService.ctorParameters = function () { return []; };
-
-var SampleModule = (function () {
-    function SampleModule() {
+var StateStoreModule = (function () {
+    function StateStoreModule() {
     }
     /**
      * @return {?}
      */
-    SampleModule.forRoot = function () {
+    StateStoreModule.forRoot = function () {
         return {
-            ngModule: SampleModule,
-            providers: [SampleService]
+            ngModule: StateStoreModule,
+            providers: [StateStoreService]
         };
     };
-    return SampleModule;
+    return StateStoreModule;
 }());
-SampleModule.decorators = [
+StateStoreModule.decorators = [
     { type: _angular_core.NgModule, args: [{
                 imports: [
                     _angular_common.CommonModule
                 ],
                 declarations: [
-                    SampleComponent,
-                    SampleDirective,
-                    SamplePipe
+                    StateStoreComponent
                 ],
                 exports: [
-                    SampleComponent,
-                    SampleDirective,
-                    SamplePipe
+                    StateStoreComponent
                 ]
             },] },
 ];
 /**
  * @nocollapse
  */
-SampleModule.ctorParameters = function () { return []; };
+StateStoreModule.ctorParameters = function () { return []; };
 
-exports.SampleModule = SampleModule;
-exports.SampleComponent = SampleComponent;
-exports.SampleDirective = SampleDirective;
-exports.SamplePipe = SamplePipe;
-exports.SampleService = SampleService;
+exports.StateStoreModule = StateStoreModule;
+exports.StateStoreComponent = StateStoreComponent;
+exports.StateStoreService = StateStoreService;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

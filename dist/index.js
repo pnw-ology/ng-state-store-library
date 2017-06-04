@@ -1,121 +1,65 @@
-import { Component, Directive, ElementRef, Injectable, NgModule, Pipe } from '@angular/core';
+import { Component, Injectable, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-var SampleComponent = (function() {
-    function SampleComponent() {}
-    return SampleComponent;
-}());
-SampleComponent.decorators = [{
-    type: Component,
-    args: [{
-        selector: 'sample-component',
-        template: "<h1>Sample component</h1>"
-    }, ]
-}, ];
-/**
- * @nocollapse
- */
-SampleComponent.ctorParameters = function() { return []; };
-
-var SampleDirective = (function() {
-    /**
-     * @param {?} el
-     */
-    function SampleDirective(el) {
-        this.el = el;
+var StateStoreComponent = (function () {
+    function StateStoreComponent() {
     }
-    return SampleDirective;
+    return StateStoreComponent;
 }());
-SampleDirective.decorators = [{
-    type: Directive,
-    args: [{
-        selector: '[sampleDirective]'
-    }, ]
-}, ];
+StateStoreComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'state-store-component',
+                template: "<h1>State Store component</h1>"
+            },] },
+];
 /**
  * @nocollapse
  */
-SampleDirective.ctorParameters = function() {
-    return [
-        { type: ElementRef, },
-    ];
-};
+StateStoreComponent.ctorParameters = function () { return []; };
 
-/**
- * Transforms any input value
- */
-var SamplePipe = (function() {
-    function SamplePipe() {}
-    /**
-     * @param {?} value
-     * @param {?=} args
-     * @return {?}
-     */
-    SamplePipe.prototype.transform = function(value, args) {
-        if (args === void 0) { args = null; }
-        return value;
-    };
-    return SamplePipe;
+var StateStoreService = (function () {
+    function StateStoreService() {
+    }
+    return StateStoreService;
 }());
-SamplePipe.decorators = [{
-        type: Pipe,
-        args: [{
-            name: 'samplePipe'
-        }, ]
-    },
+StateStoreService.decorators = [
     { type: Injectable },
 ];
 /**
  * @nocollapse
  */
-SamplePipe.ctorParameters = function() { return []; };
+StateStoreService.ctorParameters = function () { return []; };
 
-var SampleService = (function() {
-    function SampleService() {}
-    return SampleService;
-}());
-SampleService.decorators = [
-    { type: Injectable },
-];
-/**
- * @nocollapse
- */
-SampleService.ctorParameters = function() { return []; };
-
-var SampleModule = (function() {
-    function SampleModule() {}
+var StateStoreModule = (function () {
+    function StateStoreModule() {
+    }
     /**
      * @return {?}
      */
-    SampleModule.forRoot = function() {
+    StateStoreModule.forRoot = function () {
         return {
-            ngModule: SampleModule,
-            providers: [SampleService]
+            ngModule: StateStoreModule,
+            providers: [StateStoreService]
         };
     };
-    return SampleModule;
+    return StateStoreModule;
 }());
-SampleModule.decorators = [{
-    type: NgModule,
-    args: [{
-        imports: [
-            CommonModule
-        ],
-        declarations: [
-            SampleComponent,
-            SampleDirective,
-            SamplePipe
-        ],
-        exports: [
-            SampleComponent,
-            SampleDirective,
-            SamplePipe
-        ]
-    }, ]
-}, ];
+StateStoreModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [
+                    CommonModule
+                ],
+                declarations: [
+                    StateStoreComponent
+                ],
+                exports: [
+                    StateStoreComponent
+                ]
+            },] },
+];
 /**
  * @nocollapse
  */
-SampleModule.ctorParameters = function() { return []; };
+StateStoreModule.ctorParameters = function () { return []; };
 
-export { SampleModule, SampleComponent, SampleDirective, SamplePipe, SampleService };
+export { StateStoreModule, StateStoreComponent, StateStoreService };

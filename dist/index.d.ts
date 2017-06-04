@@ -1,8 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
-export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
-export declare class SampleModule {
+export * from './state-store.component';
+export * from './state-store.service';
+export declare class StateStoreModule {
     static forRoot(): ModuleWithProviders;
 }
