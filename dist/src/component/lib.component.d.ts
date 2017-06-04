@@ -1,3 +1,3 @@
-export declare class LibComponent {
+export declare class StateStoreComponent {
     name: string;
 }

@@ -7,19 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var LibComponent = (function () {
-    function LibComponent() {
+var StateStoreComponent = (function () {
+    function StateStoreComponent() {
         this.name = 'Angular Library';
     }
-    return LibComponent;
+    return StateStoreComponent;
 }());
-LibComponent = __decorate([
+StateStoreComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'my-lib',
         templateUrl: './lib.component.html',
         styleUrls: ['./lib.component.css']
     })
-], LibComponent);
-exports.LibComponent = LibComponent;
+], StateStoreComponent);
+exports.StateStoreComponent = StateStoreComponent;
 //# sourceMappingURL=lib.component.js.map

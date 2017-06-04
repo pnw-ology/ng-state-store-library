@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
-import { LibComponent } from './component/lib.component';
-import { LibService } from './service/lib.service';
-export class LibModule {
+import { StateStoreComponent } from './component/lib.component';
+import { StateStoreService } from './service/lib.service';
+export class StateStoreModule {
 }
-LibModule.decorators = [
+StateStoreModule.decorators = [
     { type: NgModule, args: [{
-                declarations: [LibComponent],
-                providers: [LibService],
-                exports: [LibComponent]
+                declarations: [StateStoreComponent],
+                providers: [StateStoreService],
+                exports: [StateStoreComponent]
             },] },
 ];
 /**
  * @nocollapse
  */
-LibModule.ctorParameters = () => [];
-function LibModule_tsickle_Closure_declarations() {
+StateStoreModule.ctorParameters = () => [];
+function StateStoreModule_tsickle_Closure_declarations() {
     /** @type {?} */
-    LibModule.decorators;
+    StateStoreModule.decorators;
     /**
      * @nocollapse
      * @type {?}
      */
-    LibModule.ctorParameters;
+    StateStoreModule.ctorParameters;
 }
 //# sourceMappingURL=module.js.map

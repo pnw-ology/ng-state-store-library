@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { LibComponent } from './component/lib.component';
-import { LibService } from './service/lib.service';
+import { StateStoreComponent } from './component/lib.component';
+import { StateStoreService } from './service/lib.service';
 
 @NgModule({
-  declarations: [LibComponent],
-  providers: [LibService],
-  exports: [LibComponent]
+  declarations: [StateStoreComponent],
+  providers: [StateStoreService],
+  exports: [StateStoreComponent]
 })
-export class LibModule { }
+export class StateStoreModule { }

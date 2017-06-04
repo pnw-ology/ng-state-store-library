@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   template: "<h2>Hello {{name}}</h2> ",
   styles: [""]
 })
-export class LibComponent {
+export class StateStoreComponent {
   name = 'Angular Library';
 }

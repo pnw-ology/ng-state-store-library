@@ -1,11 +1,11 @@
 import { Component, Injectable, NgModule } from '@angular/core';
 
-class LibComponent {
+class StateStoreComponent {
     constructor() {
         this.name = 'Angular Library';
     }
 }
-LibComponent.decorators = [
+StateStoreComponent.decorators = [
     { type: Component, args: [{ selector: 'my-lib',
                 template: "<h2>Hello {{name}}</h2> ",
                 styles: [""]
@@ -14,40 +14,40 @@ LibComponent.decorators = [
 /**
  * @nocollapse
  */
-LibComponent.ctorParameters = () => [];
+StateStoreComponent.ctorParameters = () => [];
 
-class LibService {
+class StateStoreService {
     constructor() { }
     /**
      * @return {?}
      */
     getMeaning() { return 42; }
 }
-LibService.decorators = [
+StateStoreService.decorators = [
     { type: Injectable },
 ];
 /**
  * @nocollapse
  */
-LibService.ctorParameters = () => [];
+StateStoreService.ctorParameters = () => [];
 
-class LibModule {
+class StateStoreModule {
 }
-LibModule.decorators = [
+StateStoreModule.decorators = [
     { type: NgModule, args: [{
-                declarations: [LibComponent],
-                providers: [LibService],
-                exports: [LibComponent]
+                declarations: [StateStoreComponent],
+                providers: [StateStoreService],
+                exports: [StateStoreComponent]
             },] },
 ];
 /**
  * @nocollapse
  */
-LibModule.ctorParameters = () => [];
+StateStoreModule.ctorParameters = () => [];
 
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { LibComponent, LibService, LibModule };
-//# sourceMappingURL=quickstart-lib.js.map
+export { StateStoreComponent, StateStoreService, StateStoreModule };
+//# sourceMappingURL=state-store-service.js.map

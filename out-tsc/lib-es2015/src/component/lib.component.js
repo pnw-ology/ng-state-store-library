@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-export class LibComponent {
+export class StateStoreComponent {
     constructor() {
         this.name = 'Angular Library';
     }
 }
-LibComponent.decorators = [
+StateStoreComponent.decorators = [
     { type: Component, args: [{ selector: 'my-lib',
                 template: "<h2>Hello {{name}}</h2> ",
                 styles: [""]
@@ -13,16 +13,16 @@ LibComponent.decorators = [
 /**
  * @nocollapse
  */
-LibComponent.ctorParameters = () => [];
-function LibComponent_tsickle_Closure_declarations() {
+StateStoreComponent.ctorParameters = () => [];
+function StateStoreComponent_tsickle_Closure_declarations() {
     /** @type {?} */
-    LibComponent.decorators;
+    StateStoreComponent.decorators;
     /**
      * @nocollapse
      * @type {?}
      */
-    LibComponent.ctorParameters;
+    StateStoreComponent.ctorParameters;
     /** @type {?} */
-    LibComponent.prototype.name;
+    StateStoreComponent.prototype.name;
 }
 //# sourceMappingURL=lib.component.js.map

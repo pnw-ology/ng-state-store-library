@@ -1,2 +1,2 @@
-export declare class LibModule {
+export declare class StateStoreModule {
 }

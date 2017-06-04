@@ -1,28 +1,28 @@
 import { Injectable } from '@angular/core';
-var LibService = (function () {
-    function LibService() {
+var StateStoreService = (function () {
+    function StateStoreService() {
     }
     /**
      * @return {?}
      */
-    LibService.prototype.getMeaning = function () { return 42; };
-    return LibService;
+    StateStoreService.prototype.getMeaning = function () { return 42; };
+    return StateStoreService;
 }());
-export { LibService };
-LibService.decorators = [
+export { StateStoreService };
+StateStoreService.decorators = [
     { type: Injectable },
 ];
 /**
  * @nocollapse
  */
-LibService.ctorParameters = function () { return []; };
-function LibService_tsickle_Closure_declarations() {
+StateStoreService.ctorParameters = function () { return []; };
+function StateStoreService_tsickle_Closure_declarations() {
     /** @type {?} */
-    LibService.decorators;
+    StateStoreService.decorators;
     /**
      * @nocollapse
      * @type {?}
      */
-    LibService.ctorParameters;
+    StateStoreService.ctorParameters;
 }
 //# sourceMappingURL=lib.service.js.map

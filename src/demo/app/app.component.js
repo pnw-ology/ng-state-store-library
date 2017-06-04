@@ -10,10 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var quickstart_lib_1 = require("quickstart-lib");
+var state_store_service_1 = require("state-store-service");
 var AppComponent = (function () {
-    function AppComponent(libService) {
-        this.meaning = libService.getMeaning();
+    function AppComponent(StateStoreService) {
+        this.meaning = StateStoreService.getMeaning();
     }
     return AppComponent;
 }());
@@ -22,7 +22,7 @@ AppComponent = __decorate([
         selector: 'demo-app',
         template: "\n    <my-lib></my-lib>\n    <h3>Meaning is: {{meaning}}</h3>\n  ",
     }),
-    __metadata("design:paramtypes", [quickstart_lib_1.LibService])
+    __metadata("design:paramtypes", [state_store_service_1.StateStoreService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

@@ -10,15 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var LibService = (function () {
-    function LibService() {
+var StateStoreService = (function () {
+    function StateStoreService() {
     }
-    LibService.prototype.getMeaning = function () { return 42; };
-    return LibService;
+    StateStoreService.prototype.getMeaning = function () { return 42; };
+    return StateStoreService;
 }());
-LibService = __decorate([
+StateStoreService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [])
-], LibService);
-exports.LibService = LibService;
+], StateStoreService);
+exports.StateStoreService = StateStoreService;
 //# sourceMappingURL=lib.service.js.map

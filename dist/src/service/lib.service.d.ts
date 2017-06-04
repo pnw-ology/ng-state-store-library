@@ -1,4 +1,4 @@
-export declare class LibService {
+export declare class StateStoreService {
     constructor();
     getMeaning(): number;
 }

@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var quickstart_lib_1 = require("quickstart-lib");
+var state_store_service_1 = require("state-store-service");
 var app_component_1 = require("./app.component");
 var AppModule = (function () {
     function AppModule() {
@@ -17,7 +17,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, quickstart_lib_1.LibModule],
+        imports: [platform_browser_1.BrowserModule, state_store_service_1.StateStoreModule],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })

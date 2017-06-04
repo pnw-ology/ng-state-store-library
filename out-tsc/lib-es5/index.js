@@ -1,4 +1,4 @@
-export { LibComponent } from './src/component/lib.component';
-export { LibService } from './src/service/lib.service';
-export { LibModule } from './src/module';
+export { StateStoreComponent } from './src/component/lib.component';
+export { StateStoreService } from './src/service/lib.service';
+export { StateStoreModule } from './src/module';
 //# sourceMappingURL=index.js.map

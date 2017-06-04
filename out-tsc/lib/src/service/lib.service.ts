@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class LibService {
+export class StateStoreService {
   constructor() { }
   getMeaning() { return 42; }
 }

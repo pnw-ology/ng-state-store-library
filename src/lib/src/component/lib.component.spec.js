@@ -3,18 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var testing_1 = require("@angular/core/testing");
 var platform_browser_1 = require("@angular/platform-browser");
 var lib_component_1 = require("./lib.component");
-describe('LibComponent', function () {
+describe('StateStoreComponent', function () {
     var de;
     var comp;
     var fixture;
     beforeEach(testing_1.async(function () {
         testing_1.TestBed.configureTestingModule({
-            declarations: [lib_component_1.LibComponent]
+            declarations: [lib_component_1.StateStoreComponent]
         })
             .compileComponents();
     }));
     beforeEach(function () {
-        fixture = testing_1.TestBed.createComponent(lib_component_1.LibComponent);
+        fixture = testing_1.TestBed.createComponent(lib_component_1.StateStoreComponent);
         comp = fixture.componentInstance;
         de = fixture.debugElement.query(platform_browser_1.By.css('h2'));
     });

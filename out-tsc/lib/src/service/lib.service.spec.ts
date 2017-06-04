@@ -1,19 +1,19 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { LibService } from './lib.service';
+import { StateStoreService } from './lib.service';
 
-describe('LibService', () => {
+describe('StateStoreService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [LibService]
+      providers: [StateStoreService]
     });
   });
 
-  it('should create service', inject([LibService], (service: LibService) => {
+  it('should create service', inject([StateStoreService], (service: StateStoreService) => {
     expect(service).toBeTruthy();
   }));
 
-  it('should return 42 from getMeaning', inject([LibService], (service: LibService) => {
+  it('should return 42 from getMeaning', inject([StateStoreService], (service: StateStoreService) => {
     expect(service.getMeaning()).toBe(42);
   }));
 });

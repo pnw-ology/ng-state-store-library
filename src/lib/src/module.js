@@ -9,17 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var lib_component_1 = require("./component/lib.component");
 var lib_service_1 = require("./service/lib.service");
-var LibModule = (function () {
-    function LibModule() {
+var StateStoreModule = (function () {
+    function StateStoreModule() {
     }
-    return LibModule;
+    return StateStoreModule;
 }());
-LibModule = __decorate([
+StateStoreModule = __decorate([
     core_1.NgModule({
-        declarations: [lib_component_1.LibComponent],
-        providers: [lib_service_1.LibService],
-        exports: [lib_component_1.LibComponent]
+        declarations: [lib_component_1.StateStoreComponent],
+        providers: [lib_service_1.StateStoreService],
+        exports: [lib_component_1.StateStoreComponent]
     })
-], LibModule);
-exports.LibModule = LibModule;
+], StateStoreModule);
+exports.StateStoreModule = StateStoreModule;
 //# sourceMappingURL=module.js.map

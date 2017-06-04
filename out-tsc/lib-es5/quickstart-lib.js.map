@@ -1,1 +1,0 @@
-{"version":3,"sources":["../lib/quickstart-lib.ts"],"names":[],"mappings":"AAAA;;GAEG;AAEH,OAAO,EAAC,YAAY,EAAC,UAAU,EAAC,SAAS,EAAC,MAAM,SAAS,CAAC","file":"quickstart-lib.js","sourceRoot":"","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\n\nexport {LibComponent,LibService,LibModule} from './index';\n"]}
