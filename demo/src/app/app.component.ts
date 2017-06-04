@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SampleService } from 'state-store-library/dist';
+import { SampleService } from 'state-store-library';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { SampleService } from 'state-store-library/dist';
 })
 export class AppComponent {
   title = 'app works!';
-  constructor(sampleService: SampleService) { 
+  constructor(private sampleService: SampleService) {
     console.log('sample-service:', sampleService);
   }
 }
