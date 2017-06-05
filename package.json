@@ -1,7 +1,7 @@
 {
     "name": "state-store-library",
     "version": "0.0.1",
-    "description": "Build an Angular library compatible with AoT compilation and Tree shaking",
+    "description": "A state store library for angular (2.x.x +)",
     "main": "./bundles/state-store-library.umd.js",
     "module": "./modules/state-store-library.es5.js",
     "es2015": "./modules/state-store-library.js",
@@ -17,12 +17,12 @@
     "author": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robisim74/state-store-library.git"
+        "url": "https://github.com/pnw-ology/ng-state-store-library"
     },
     "bugs": {
-        "url": "https://github.com/robisim74/state-store-library/issues"
+        "url": "https://github.com/pnw-ology/ng-state-store-library"
     },
-    "homepage": "https://github.com/robisim74/state-store-library",
+    "homepage": "https://github.com/pnw-ology/ng-state-store-library",
     "keywords": [
         "angular",
         "javascript",
