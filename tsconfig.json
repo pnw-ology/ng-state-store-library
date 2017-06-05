@@ -1,28 +1,27 @@
 {
-    "angularCompilerOptions": {
-        "strictMetadataEmit": true,
-        "skipTemplateCodegen": true
-    },
     "compilerOptions": {
-        "baseUrl": "",
-        "declaration": true,
+        "baseUrl": ".",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "lib": ["es2015", "dom"],
-        "mapRoot": "./",
-        "module": "es2015",
+        "module": "commonjs",
         "moduleResolution": "node",
-        "outDir": "./dist",
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
+        "rootDir": ".",
+        "inlineSources": true,
+        "lib": [
+            "es6",
+            "dom"
+        ],
         "target": "es5",
-        "typeRoots": [
-            "./node_modules/@types"
+        "skipLibCheck": true,
+        "types": [
+            "jasmine",
+            "node"
         ]
     },
-    "files": [
-        "./src/index.ts"
-    ],
-    "awesomeTypescriptLoaderOptions": {
-        "forkChecker": true
-    }
+    "exclude": [
+        "node_modules"
+    ]
 }
