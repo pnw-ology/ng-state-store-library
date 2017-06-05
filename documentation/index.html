@@ -1,0 +1,447 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>state-store-library documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	    <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">state-store-library documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="./index.html">state-store-library documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a  href="./overview.html" 
+                                        
+                                         href="./overview.html" 
+                                        
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="./modules/StateStoreModule.html" >StateStoreModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="./components/StateStoreComponent.html" >StateStoreComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="./injectables/StateStoreService.html" >StateStoreService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="./index.html">state-store-library documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="./index.html"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a  href="./overview.html" 
+                                               
+                                                href="./overview.html" 
+                                               
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="./modules/StateStoreModule.html" >StateStoreModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="./components/StateStoreComponent.html" >StateStoreComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="./injectables/StateStoreService.html" >StateStoreService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content readme">
+                   <div class="content-data">
+<h1 id="state-store-library">state-store-library</h1>
+<p><a href="https://travis-ci.org/robisim74/state-store-library"><img src="https://travis-ci.org/robisim74/state-store-library.svg?branch=master" alt="Build Status" class="img-responsive"></a></p>
+<blockquote>
+<p>Build an Angular library compatible with AoT compilation &amp; Tree shaking.</p>
+</blockquote>
+<p>This starter allows you to create a library for <strong>Angular 2+</strong> apps written in <em>TypeScript</em>, <em>ES6</em> or <em>ES5</em>. 
+The project is based on the official <em>Angular</em> packages.</p>
+<p>Get the <a href="https://github.com/robisim74/state-store-library/blob/master/CHANGELOG.md">Changelog</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#1">1 Project structure</a></li>
+<li><a href="#2">2 Customizing</a></li>
+<li><a href="#3">3 Testing</a></li>
+<li><a href="#4">4 Building</a></li>
+<li><a href="#5">5 Publishing</a></li>
+<li><a href="#6">6 Documentation</a></li>
+<li><a href="#7">7 Using the library</a></li>
+<li><a href="#8">8 What it is important to know</a></li>
+</ul>
+<h2 id="-a-name-1-a-1-project-structure"><a name="1"></a>1 Project structure</h2>
+<ul>
+<li>Library:<ul>
+<li><strong>src</strong> folder for the classes</li>
+<li><strong>public_api.ts</strong> entry point for all public APIs of the package</li>
+<li><strong>package.json</strong> <em>npm</em> options</li>
+<li><strong>rollup.config.js</strong> <em>Rollup</em> configuration for building the bundles</li>
+<li><strong>tsconfig-build.json</strong> <em>ngc</em> compiler options for <em>AoT compilation</em></li>
+<li><strong>build.js</strong> building process using <em>ShellJS</em></li>
+</ul>
+</li>
+<li>Testing:<ul>
+<li><strong>tests</strong> folder for unit &amp; integration tests</li>
+<li><strong>karma.conf.js</strong> <em>Karma</em> configuration that uses <em>webpack</em> to build the tests</li>
+<li><strong>spec.bundle.js</strong> defines the files used by <em>webpack</em></li>
+</ul>
+</li>
+<li>Extra:<ul>
+<li><strong>tslint.json</strong> <em>TypeScript</em> linter rules with <em>Codelyzer</em></li>
+<li><strong>travis.yml</strong> <em>Travis CI</em> configuration</li>
+</ul>
+</li>
+</ul>
+<h2 id="-a-name-2-a-2-customizing"><a name="2"></a>2 Customizing</h2>
+<ol>
+<li><p>Update <a href="https://docs.npmjs.com/getting-started/installing-node">Node &amp; npm</a>.</p>
+</li>
+<li><p>Rename <code>state-store-library</code> and <code>StateStoreLibrary</code> everywhere to <code>my-library</code> and <code>myLibrary</code>.</p>
+</li>
+<li><p>Update in <code>package.json</code> file:</p>
+<ul>
+<li>version: <a href="http://semver.org/">Semantic Versioning</a></li>
+<li>description</li>
+<li>urls</li>
+<li><p>packages</p>
+<p>and run <code>npm install</code>.</p>
+</li>
+</ul>
+</li>
+<li><p>Create your classes in <code>src</code> folder, and export public classes in <code>my-library.ts</code>.</p>
+</li>
+<li><p>You can create only one <em>module</em> for the whole library: 
+I suggest you create different <em>modules</em> for different functions, 
+so that the user can import only those he needs and optimize <em>Tree shaking</em> of his app.</p>
+</li>
+<li><p>Update in <code>rollup.config.js</code> file <code>globals</code> external dependencies with those that actually you use.</p>
+</li>
+<li><p>Create unit &amp; integration tests in <code>tests</code> folder, or unit tests next to the things they test in <code>src</code> folder, always using <code>.spec.ts</code> extension. 
+<em>Karma</em> is configured to use <em>webpack</em> only for <code>*.ts</code> files: if you need to test different formats, you have to update it.</p>
+</li>
+</ol>
+<h2 id="-a-name-3-a-3-testing"><a name="3"></a>3 Testing</h2>
+<p>The following command run unit &amp; integration tests that are in the <code>tests</code> folder, and unit tests that are in <code>src</code> folder: </p>
+<pre class="line-numbers"><code class="language-Shell">npm test</code></pre><h2 id="-a-name-4-a-4-building"><a name="4"></a>4 Building</h2>
+<p>The following command:</p>
+<pre class="line-numbers"><code class="language-Shell">npm run build</code></pre><ul>
+<li>starts <em>TSLint</em> with <em>Codelyzer</em></li>
+<li>starts <em>AoT compilation</em> using <em>ngc</em> compiler</li>
+<li>creates <code>dist</code> folder with all the files of distribution</li>
+</ul>
+<blockquote>
+<p>If you get errors during the building process or bundles are not created, set <em>silent</em> to false in the <em>build.js</em> file to check what&#39;s going wrong: warnings on the first execution of <em>rollup</em> are normal, and also the errors on <em>tsc</em> are a known issue.</p>
+</blockquote>
+<p>To test locally the npm package:</p>
+<pre class="line-numbers"><code class="language-Shell">npm run pack-lib</code></pre><p>Then you can install it in an app to test it:</p>
+<pre class="line-numbers"><code class="language-Shell">npm install [path]my-library-[version].tgz</code></pre><h2 id="-a-name-5-a-5-publishing"><a name="5"></a>5 Publishing</h2>
+<p>Before publishing the first time:</p>
+<ul>
+<li>you can register your library on <a href="https://travis-ci.org/">Travis CI</a>: you have already configured <code>.travis.yml</code> file</li>
+<li>you must have a user on the <em>npm</em> registry: <a href="https://docs.npmjs.com/getting-started/publishing-npm-packages">Publishing npm packages</a></li>
+</ul>
+<pre class="line-numbers"><code class="language-Shell">npm run publish-lib</code></pre><h2 id="-a-name-6-a-6-documentation"><a name="6"></a>6 Documentation</h2>
+<p>To generate the documentation, this starter uses <a href="https://github.com/compodoc/compodoc">compodoc</a>:</p>
+<pre class="line-numbers"><code class="language-Shell">npm run compodoc
+npm run compodoc-serve</code></pre><h2 id="-a-name-7-a-7-using-the-library"><a name="7"></a>7 Using the library</h2>
+<h3 id="installing">Installing</h3>
+<pre class="line-numbers"><code class="language-Shell">npm install my-library --save</code></pre><h3 id="loading">Loading</h3>
+<h4 id="using-systemjs-configuration">Using SystemJS configuration</h4>
+<pre class="line-numbers"><code class="language-JavaScript">System.config({
+    map: {
+        &#39;my-library&#39;: &#39;node_modules/my-library/bundles/my-library.umd.js&#39;
+    }
+});</code></pre><h4 id="angular-cli">Angular-CLI</h4>
+<p>No need to set up anything, just import it in your code.</p>
+<h4 id="rollup-or-webpack">Rollup or webpack</h4>
+<p>No need to set up anything, just import it in your code.</p>
+<h4 id="plain-javascript">Plain JavaScript</h4>
+<p>Include the <code>umd</code> bundle in your <code>index.html</code>:</p>
+<pre class="line-numbers"><code class="language-Html">&lt;script src=&quot;node_modules/my-library/bundles/my-library.umd.js&quot;&gt;&lt;/script&gt;</code></pre><p>and use global <code>ng.myLibrary</code> namespace.</p>
+<h3 id="aot-compilation">AoT compilation</h3>
+<p>The library is compatible with <em>AoT compilation</em>.</p>
+<h2 id="-a-name-8-a-8-what-it-is-important-to-know"><a name="8"></a>8 What it is important to know</h2>
+<ol>
+<li><p><code>package.json</code></p>
+<ul>
+<li><code>&quot;main&quot;: &quot;./bundles/state-store-library.umd.js&quot;</code> legacy module format </li>
+<li><code>&quot;module&quot;: &quot;./bundles/state-store-library.es5.js&quot;</code> flat <em>ES</em> module, for using module bundlers such as <em>Rollup</em> or <em>webpack</em>: 
+<a href="https://github.com/rollup/rollup/wiki/pkg.module">package module</a></li>
+<li><code>&quot;es2015&quot;: &quot;./bundles/state-store-library.js&quot;</code> <em>ES2015</em> flat <em>ESM</em> format, experimental <em>ES2015</em> build</li>
+<li><code>&quot;peerDependencies&quot;</code> the packages and their versions required by the library when it will be installed</li>
+</ul>
+</li>
+<li><p><code>tsconfig.json</code> file used by <em>TypeScript</em> compiler</p>
+<ul>
+<li>Compiler options:<ul>
+<li><code>&quot;strict&quot;: true</code> enables <em>TypeScript</em> <code>strict</code> master option</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>tsconfig-build.json</code> file used by <em>ngc</em> compiler</p>
+<ul>
+<li><p>Compiler options:</p>
+<ul>
+<li><code>&quot;declaration&quot;: true</code> to emit <em>TypeScript</em> declaration files</li>
+<li><code>&quot;module&quot;: &quot;es2015&quot;</code> &amp; <code>&quot;target&quot;: &quot;es2015&quot;</code> are used by <em>Rollup</em> to create the <em>ES2015</em> bundle</li>
+</ul>
+</li>
+<li><p>Angular Compiler Options:</p>
+<ul>
+<li><code>&quot;skipTemplateCodegen&quot;: true,</code> skips generating <em>AoT</em> files</li>
+<li><code>&quot;annotateForClosureCompiler&quot;: true</code> for compatibility with <em>Google Closure compiler</em></li>
+<li><code>&quot;strictMetadataEmit&quot;: true</code> without emitting metadata files, the library will not compatible with <em>AoT compilation</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>rollup.config.js</code> file used by <em>Rollup</em></p>
+<ul>
+<li><code>format: &#39;umd&#39;</code> the <em>Universal Module Definition</em> pattern is used by <em>Angular</em> for its bundles</li>
+<li><code>moduleName: &#39;ng.StateStoreLibrary&#39;</code> defines the global namespace used by <em>JavaScript</em> apps</li>
+<li><code>external</code> &amp; <code>globals</code> declare the external packages</li>
+</ul>
+</li>
+<li><p>Server-side prerendering</p>
+<p> If you want the library will be compatible with server-side prerendering:</p>
+<ul>
+<li><code>window</code>, <code>document</code>, <code>navigator</code> and other browser types do not exist on the server</li>
+<li>don&#39;t manipulate the <em>nativeElement</em> directly</li>
+</ul>
+</li>
+</ol>
+<h2 id="license">License</h2>
+<p>MIT</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 0;</script>
+
+       <script src="./js/search/search.js"></script>
+       <script src="./js/search/lunr.min.js"></script>
+       <script src="./js/search/search-lunr.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+       <script src="./js/search/search_index.js"></script>
+
+    </body>
+</html>
