@@ -102,28 +102,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var StateStoreLibraryModule = StateStoreLibraryModule_1 = (function () {
+var StateStoreLibraryModule = (function () {
     function StateStoreLibraryModule() {
     }
+    StateStoreLibraryModule_1 = StateStoreLibraryModule;
     StateStoreLibraryModule.forRoot = function () {
         return {
             ngModule: StateStoreLibraryModule_1,
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_state_store_service__["a" /* StateStoreService */]]
         };
     };
+    StateStoreLibraryModule = StateStoreLibraryModule_1 = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+            declarations: [],
+            exports: [],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_common__["CommonModule"]
+            ]
+        })
+    ], StateStoreLibraryModule);
     return StateStoreLibraryModule;
+    var StateStoreLibraryModule_1;
 }());
-StateStoreLibraryModule = StateStoreLibraryModule_1 = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
-        declarations: [],
-        exports: [],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_common__["CommonModule"]
-        ]
-    })
-], StateStoreLibraryModule);
 
-var StateStoreLibraryModule_1;
 
 
 /***/ },
@@ -413,12 +414,12 @@ var StateStoreService = (function () {
         }
     };
     ;
+    StateStoreService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [Number])
+    ], StateStoreService);
     return StateStoreService;
 }());
-StateStoreService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [Number])
-], StateStoreService);
 
 
 

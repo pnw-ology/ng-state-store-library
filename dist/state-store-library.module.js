@@ -10,18 +10,18 @@ var StateStoreLibraryModule = (function () {
             providers: [StateStoreService]
         };
     };
+    StateStoreLibraryModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [],
+                    exports: [],
+                    imports: [
+                        CommonModule
+                    ]
+                },] },
+    ];
+    /** @nocollapse */
+    StateStoreLibraryModule.ctorParameters = function () { return []; };
     return StateStoreLibraryModule;
 }());
 export { StateStoreLibraryModule };
-StateStoreLibraryModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [],
-                exports: [],
-                imports: [
-                    CommonModule
-                ]
-            },] },
-];
-/** @nocollapse */
-StateStoreLibraryModule.ctorParameters = function () { return []; };
 //# sourceMappingURL=state-store-library.module.js.map

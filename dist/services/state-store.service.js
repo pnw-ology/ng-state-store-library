@@ -241,14 +241,14 @@ var StateStoreService = (function () {
         }
     };
     ;
+    StateStoreService.decorators = [
+        { type: Injectable },
+    ];
+    /** @nocollapse */
+    StateStoreService.ctorParameters = function () { return [
+        null,
+    ]; };
     return StateStoreService;
 }());
 export { StateStoreService };
-StateStoreService.decorators = [
-    { type: Injectable },
-];
-/** @nocollapse */
-StateStoreService.ctorParameters = function () { return [
-    null,
-]; };
 //# sourceMappingURL=state-store.service.js.map

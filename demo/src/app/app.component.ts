@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { StateStoreLibraryModule } from 'state-store-library/dist';
 
 @Component({
@@ -9,9 +9,10 @@ import { StateStoreLibraryModule } from 'state-store-library/dist';
 })
 export class AppComponent {
   public title = 'app works!';
+  public stateStore = new StateStoreLibraryModule();
 
   constructor(heroService: StateStoreLibraryModule) {
-    console.log(StateStoreLibraryModule);
+    console.log('>>> ', this.stateStore, heroService, heroService);
 
   }
 }

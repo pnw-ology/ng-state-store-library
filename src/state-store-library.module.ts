@@ -4,7 +4,7 @@ import { StateStoreService } from './services/state-store.service';
 
 @NgModule({
     declarations: [
-
+        StateStoreService
     ],
     exports: [
 
